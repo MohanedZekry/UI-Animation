@@ -51,6 +51,20 @@ class RouteTransition extends PageRouteBuilder {
             var tween = Tween(begin: begin, end: endScale);
             var curvedAnimation = CurvedAnimation(parent: animation, curve: Curves.easeIn);
             return RotationTransition(turns: tween.animate(curvedAnimation), child: child,);
+
+          case AnimationType.sizeUp:
+            return Align(
+              alignment: Alignment.center,
+              child: SizeTransition(sizeFactor: animation,child: child),
+            );
+
+          case AnimationType.opacity:
+            return Align(
+              alignment: Alignment.center,
+              child: FadeTransition(opacity: animation,child: child),
+            );
+
+
         }
       }
   );

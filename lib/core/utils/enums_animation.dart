@@ -5,4 +5,6 @@ enum AnimationType{
   slideDown,
   scaleUp,
   rotate,
+  sizeUp,
+  opacity,
 }

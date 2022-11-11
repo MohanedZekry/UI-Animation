@@ -9,7 +9,7 @@ class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.green,
       body: Center(
         child: ElevatedButton(
           child: const Text(
@@ -17,7 +17,8 @@ class FirstScreen extends StatelessWidget {
           ),
           onPressed: (){
             Navigator.of(context).push(
-              RouteTransition(destination: const SecondScreen(),slideAnimationType: AnimationType.rotate)
+              RouteTransition(destination: const SecondScreen(),
+                  slideAnimationType: AnimationType.opacity)
             );
           },
         ),
