@@ -7,9 +7,17 @@ class SecondScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
-      body: Container(
-
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: Container(
+              color: Colors.red,
+              height: 100,
+              width: 100,
+            ),
+          )
+        ],
       ),
     );
   }

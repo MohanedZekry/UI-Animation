@@ -9,7 +9,7 @@ class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.green[400],
       body: Center(
         child: ElevatedButton(
           child: const Text(
